@@ -73,7 +73,7 @@ export class IssuesController {
   }
 
   @Patch(':id')
-  @Roles(UserRole.ADMIN)
+  // @Roles(UserRole.ADMIN)
   @ApiOperation({ summary: 'Update an issue' })
   @ApiResponse({ status: 200, description: 'Issue successfully updated.' })
   @ApiResponse({ status: 404, description: 'Issue not found.' })
